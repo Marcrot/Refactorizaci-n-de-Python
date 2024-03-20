@@ -5,9 +5,9 @@ def imprimir_resultados():
     read_file.close()       
 
 def ingresar_comentarios():
+    print( 'Por favor, introduzca una puntuación en una escala de 1 a 5' )
+    point = input()
     while True:
-        print( 'Por favor, introduzca una puntuación en una escala de 1 a 5' )
-        point = input()
         if point.isdecimal():
             point = int(point)
             if  point <= 0 or point > 5: # Expresión condicional que es menor que 0 o mayor que 5
